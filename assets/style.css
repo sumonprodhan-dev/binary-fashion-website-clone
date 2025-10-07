@@ -1,32 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-:root{
+
+:root {
     --primary-color: #27a102;
     --primary-text-color: #1a133b;
     --secondary-text-color: #797687;
     --thard-text-color: #2b2350;
 }
-section, .section-padding{
+
+section,
+.section-padding {
     padding: 60px 0px;
 }
 
-.section-heading h1{
+.section-heading h1 {
     font-size: 40px;
     color: var(--primary-text-color);
     font-weight: 600;
 }
-.section-heading h1 span{
+
+.section-heading h1 span {
     color: var(--primary-color);
 }
-.section-heading p{
+
+.section-heading p {
     color: var(--secondary-text-color);
     font-size: 16px;
     margin: 15px 0px 60px 0px;
@@ -34,18 +39,19 @@ section, .section-padding{
 
 
 /* nav area start */
-.binary-nav li a{
+.binary-nav li a {
     text-decoration: none;
     position: relative;
     color: var(--primary-text-color);
     font-weight: 500;
     transition: all ease-in-out 0.5s;
 }
-.binary-nav li a:hover{
+
+.binary-nav li a:hover {
     color: var(--primary-color) !important;
 }
 
-.binary-nav li a::after{
+.binary-nav li a::after {
     position: absolute;
     content: '';
     width: 0%;
@@ -56,9 +62,11 @@ section, .section-padding{
     bottom: 2px;
     transition: all ease-in-out 0.5s;
 }
-.binary-nav li a:hover::after{
+
+.binary-nav li a:hover::after {
     width: 100%;
 }
+
 .nav-btn a {
     background-color: var(--primary-color);
     padding: 15px 30px;
@@ -69,14 +77,23 @@ section, .section-padding{
     box-shadow: 0px 9px 20px 0px var(--primary-color);
     transition: all ease-in-out 0.5s;
 }
-.nav-btn a:hover{
+
+.nav-btn a:hover {
     box-shadow: none;
 }
+
 /* nav area end */
 
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * └─────────────────────────────────────────────┘
+ */
 
 /* hero area start */
-.hero-content h1{
+.hero-content h1 {
     font-size: 50px;
     color: var(--primary-text-color);
     font-weight: 300;
@@ -84,18 +101,21 @@ section, .section-padding{
     padding-top: 70px;
     letter-spacing: -2px;
 }
-.hero-content h1 span{
+
+.hero-content h1 span {
     color: var(--primary-text-color);
     font-weight: 600;
     font-size: 55px;
     letter-spacing: 0px;
 }
-.hero-content p{
+
+.hero-content p {
     color: var(--secondary-text-color);
     font-size: 16px;
     margin-bottom: 50px;
 }
-.hero-btn-1{
+
+.hero-btn-1 {
     background-color: var(--primary-color);
     padding: 10px 30px;
     border-radius: 10px;
@@ -106,11 +126,13 @@ section, .section-padding{
     margin-right: 20px;
     transition: all ease-in-out 0.5s;
 }
-.hero-btn-1:hover{
+
+.hero-btn-1:hover {
     background-color: transparent;
     color: var(--primary-color);
 }
-.hero-btn-2{
+
+.hero-btn-2 {
     background-color: transparent;
     padding: 10px 30px;
     border-radius: 10px;
@@ -120,30 +142,34 @@ section, .section-padding{
     font-weight: 500;
     transition: all ease-in-out 0.5s;
 }
-.hero-btn-2:hover{
+
+.hero-btn-2:hover {
     background-color: var(--primary-color);
     color: #fff;
 }
 
-.hero-background-element .ball{
+.hero-background-element .ball {
     position: absolute;
     top: 10%;
     left: 10%;
     z-index: -1;
 }
-.hero-background-element .triangle{
+
+.hero-background-element .triangle {
     position: absolute;
     top: 85%;
     left: 40%;
     z-index: 1;
 }
-.hero-background-element .dot-shape{
+
+.hero-background-element .dot-shape {
     position: absolute;
     top: -45px;
     right: 40px;
     z-index: -1;
 }
-.hero-background-element .circle-bg{
+
+.hero-background-element .circle-bg {
     position: absolute;
     width: 1130px;
     height: 1130px;
@@ -155,56 +181,65 @@ section, .section-padding{
 }
 
 .rotate-icon {
-  display: inline-block;
-  animation: spin 8s linear infinite;
+    display: inline-block;
+    animation: spin 8s linear infinite;
 }
+
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
+
 /* hero area end */
 
 
 /* about area start */
-.about-section{
+.about-section {
     margin-top: 200px;
 }
-.dot-img{
+
+.dot-img {
     top: -35px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
 }
+
 /* about area end */
 
 
 /* project area start */
-.project-card{
+.project-card {
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
     border-radius: 10px;
     transition: all ease-in-out 0.5s;
 }
-.project-card:hover{
-    transform:scale(1.03);
+
+.project-card:hover {
+    transform: scale(1.03);
 }
-.project-card-main-img{
+
+.project-card-main-img {
     width: 100%;
     height: 170px;
     object-fit: cover;
     border-radius: 10px;
 }
-.project-overlay-img img{
-   width: 100px;
-   height: auto;
-   object-fit: cover;
+
+.project-overlay-img img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
 }
-.project-overlay-img{
+
+.project-overlay-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -219,27 +254,32 @@ section, .section-padding{
     border-radius: 10px;
     opacity: 1;
 }
+
 /* project area end */
 
 
 /* technology area start */
-.technologies-section{
+.technologies-section {
     background-color: #f5f9f8;
     margin-bottom: 20px;
 }
-.technology-img-area{
+
+.technology-img-area {
     min-height: 400px;
 }
-.technology-heading h1{
+
+.technology-heading h1 {
     font-size: 40px;
     color: var(--primary-text-color);
     font-weight: 600;
     margin-bottom: -20px;
 }
-.technology-heading h1 span{
+
+.technology-heading h1 span {
     color: var(--primary-color);
 }
-.our-technologies-img img{
+
+.our-technologies-img img {
     max-width: 100px;
     display: inline-block;
     display: flex;
@@ -247,94 +287,137 @@ section, .section-padding{
     align-items: center;
     flex-wrap: wrap;
 }
-.our-technologies-img .react{
+
+.our-technologies-img .react {
     top: 20%;
     left: 23%;
 }
-.our-technologies-img .laravel{
+
+.our-technologies-img .laravel {
     top: 28%;
     left: 33%;
     object-fit: contain;
 }
-.our-technologies-img .wordpress{
+
+.our-technologies-img .wordpress {
     top: 45%;
     left: 25%;
     object-fit: contain;
 }
-.our-technologies-img .bootsrtap{
+
+.our-technologies-img .bootsrtap {
     top: 23%;
     left: 50%;
     object-fit: contain;
 }
-.our-technologies-img .flutter{
+
+.our-technologies-img .flutter {
     top: 45%;
     left: 45%;
     object-fit: contain;
 }
-.our-technologies-img .next{
+
+.our-technologies-img .next {
     top: 65%;
     left: 35%;
     object-fit: contain;
 }
-.our-technologies-img .firebase{
+
+.our-technologies-img .firebase {
     top: 30%;
     left: 63%;
     object-fit: contain;
 }
-.our-technologies-img .sql{
+
+.our-technologies-img .sql {
     top: 22%;
     left: 75%;
     object-fit: contain;
 }
-.our-technologies-img .aws{
+
+.our-technologies-img .aws {
     top: 73%;
     left: 20%;
     object-fit: contain;
 }
-.our-technologies-img .tailwind{
+
+.our-technologies-img .tailwind {
     top: 60%;
     left: 60%;
     object-fit: contain;
 }
-.our-technologies-img .google-map{
+
+.our-technologies-img .google-map {
     top: 70%;
     left: 50%;
     object-fit: contain;
 }
-.our-technologies-img .vue{
+
+.our-technologies-img .vue {
     top: 72%;
     left: 72%;
     object-fit: contain;
 }
 
 .bounce-y {
-  animation: bounceY 5s infinite;
-  animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+    animation: bounceY 5s infinite;
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
 }
+
 @keyframes bounceY {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-30px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
 }
 
 .bounce-x {
-  animation: bounceX 5s infinite;
-  animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
-}
-@keyframes bounceX {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(-30px); }
+    animation: bounceX 5s infinite;
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
 }
 
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-.delay-3 { animation-delay: 0.6s; }
-.delay-4 { animation-delay: 0.8s; }
-.delay-5 { animation-delay: 1s; }
+@keyframes bounceX {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
+.delay-5 {
+    animation-delay: 1s;
+}
+
 /* technology area end */
 
 
 /* services area start */
-.services-card{
+.services-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -347,56 +430,72 @@ section, .section-padding{
     box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.1);
     transition: all ease-in-out 0.3s;
 }
-.services-card:hover{
+
+.services-card:hover {
     transform: scale(1.05);
 }
-.services-card-img img{
-    width:60px;
+
+.services-card-img img {
+    width: 60px;
     height: auto;
     margin-bottom: 20px;
 }
+
 /* services area end */
 
 
 /* partner area start */
-.partner-content ul{
+.partner-content ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px 100px;
-    padding:0px;
+    padding: 0px;
     flex-wrap: wrap;
 }
-.partner-content ul li{
+
+.partner-content ul li {
     list-style: none;
 }
-.partner-content ul li img{
+
+.partner-content ul li img {
     width: 150px;
     filter: grayscale(1);
     transition: all ease-in-out 0.3s;
 }
-.partner-content ul li img:hover{
+
+.partner-content ul li img:hover {
     filter: grayscale(0);
 }
+
 /* partner area end */
 
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * └─────────────────────────────────────────────┘
+ */
 
 /* footer area start */
-footer{
+footer {
     background-color: #171616;
 }
 
-.footer-social-icon ul{
+.footer-social-icon ul {
     display: flex;
     justify-content: start;
     gap: 10px;
     margin-bottom: 20px;
     padding: 0px;
 }
-.footer-social-icon ul li{
+
+.footer-social-icon ul li {
     list-style: none;
 }
-.footer-social-icon ul li a{
+
+.footer-social-icon ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
@@ -409,7 +508,8 @@ footer{
     border-radius: 50%;
     transition: .3s;
 }
-.footer-social-icon ul li a:hover{
+
+.footer-social-icon ul li a:hover {
     color: #27a102;
     color: #fff;
     transition-behavior: smooth;
@@ -417,18 +517,141 @@ footer{
 }
 
 .footer-item {
-  display: flex;
-  align-items: flex-start; 
-  margin-bottom: 15px;  
-}
-.footer-item i {
-  color: green;
-  margin-right: 10px; 
-  font-size: 16px; 
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
 }
 
-.footer-devider{
+.footer-item i {
+    color: green;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.footer-devider {
     border: 1px solid var(--secondary-text-color);
     margin: 30px 0px 20px 0px;
 }
+
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #27a102;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.scroll-top:hover {
+    background-color: #fff;
+    color: #27a102;
+}
+
 /* footer area end */
+
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * └─────────────────────────────────────────────┘
+ */
+
+/* portfolio page css start */
+.portfolio-section-padding {
+    padding: 30px 0px 100px 0px;
+}
+.portfolio-section-heading h1 {
+    font-size: 50px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+.portfolio-section-heading h1 span {
+    color: var(--primary-color);
+}
+.portfolio-section-heading p {
+    color: var(--secondary-text-color);
+    font-size: 20px;
+}
+.portfolio-item {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: all ease-in-out 0.4s;
+
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.01);
+}
+.portfolio-item:hover .portfolio-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 15px;
+    opacity: 1;
+    transition: all ease-in-out 0.4s;
+}
+.portfolio-overlay h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    margin-left: 100px;
+}
+
+.portfolio-overlay p {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.portfolio-overlay a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #27a102;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-left: 100px;
+    transition: all ease-in-out 0.4s;
+}
+.portfolio-overlay a:hover {
+    color: #fff;
+    background-color: #202020;
+}
+    /* portfolio page css end */
+
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * └─────────────────────────────────────────────┘
+ */
+
