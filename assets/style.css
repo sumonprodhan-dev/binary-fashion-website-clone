@@ -1,3 +1,14 @@
+/* code instruction */
+/* 
+    - Navbar (48 to 116) number line ✅
+    - Home page (127 to 518) number line ✅
+    - About page (736 to 904) number line ✅
+    - Portfolio page (626 to 722) number line ✅
+    - Contact page (921 to 1034) number line ✅
+    - Footer (526 to 621) number line ✅
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +27,7 @@ html {
     --thard-text-color: #2b2350;
 }
 
+/* common css */
 section,
 .section-padding {
     padding: 60px 0px;
@@ -114,6 +126,7 @@ section,
  * │  Author : Sumon Prodhan                     │
  * │  Role   : Full Stack Developer              │
  * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : Home Page css code                │
  * └─────────────────────────────────────────────┘
  */
 
@@ -138,6 +151,11 @@ section,
     color: var(--secondary-text-color);
     font-size: 16px;
     margin-bottom: 50px;
+}
+
+.hero-content-btn {
+    display: flex;
+    align-items: center;
 }
 
 .hero-btn-1 {
@@ -235,11 +253,14 @@ section,
 
 .dot-img {
     top: -35px;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     z-index: -1;
 }
-
+.dot-img img{
+    width: 200px !important;
+    height: auto !important;
+}
 /* about area end */
 
 
@@ -505,6 +526,7 @@ section,
  * │  Author : Sumon Prodhan                     │
  * │  Role   : Full Stack Developer              │
  * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : Footer css code                   │
  * └─────────────────────────────────────────────┘
  */
 
@@ -604,6 +626,7 @@ footer {
  * │  Author : Sumon Prodhan                     │
  * │  Role   : Full Stack Developer              │
  * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : Portfolio Page css code           │
  * └─────────────────────────────────────────────┘
  */
 
@@ -704,5 +727,318 @@ footer {
  * │  Author : Sumon Prodhan                     │
  * │  Role   : Full Stack Developer              │
  * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : About Page css code               │
+ * └─────────────────────────────────────────────┘
+ */
+
+
+/* about page css start*/
+.about-content {
+    padding: 50px 100px 0px 0px;
+}
+
+.about-img img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.about-making-img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.making-area-content {
+    padding: 0px 100px 0px 0px;
+}
+
+.growth-area-content {
+    padding-top: 50px;
+}
+
+.growth-img img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.leadership-area-content {
+    padding: 0px 100px 0px 0px;
+}
+
+.dream-card {
+    padding: 0px 20px 0px 20px;
+    transition: all ease-in-out 0.4s;
+}
+
+.dream-card:hover {
+    transform: scale(1.01);
+}
+
+.dream-card h4 {
+    margin: 20px 0px 20px 0px;
+}
+
+.dream-card img {
+    width: 80px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.achievements-area h1 {
+    font-size: 40px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+.achievements-area h1 span {
+    color: var(--primary-color);
+}
+
+.achievements-card {
+    padding: 30px 0px 0px 0px;
+    transition: all ease-in-out 0.4s;
+}
+
+.achievements-card:hover {
+    transform: scale(1.01);
+}
+
+.achievements-card h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.achi-1 {
+    color: #7052fb !important;
+}
+
+.achi-2 {
+    color: #27a102 !important;
+}
+
+.achi-3 {
+    color: #22cd1a !important;
+}
+
+.achi-4 {
+    color: #f62ee1 !important;
+}
+
+
+.introducing-card {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    perspective: 1000px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.introducing-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.introducing-card:hover .introducing-inner {
+    transform: rotateY(180deg);
+}
+
+.introducing-img,
+.introducing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+}
+
+.introducing-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.introducing-overlay {
+    background-color: #2b2350;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 25px;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+}
+
+.introducing-overlay p::first-letter {
+    font-size: 30px;
+}
+
+.hire-us-area {
+    background-image: url(./images/about-page_img/hire-sec_img/cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+
+.hire-us-section {
+    margin-bottom: 40px;
+}
+
+/* about page css end */
+
+
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : Contact Page css code             │
+ * └─────────────────────────────────────────────┘
+ */
+
+
+/* contact page css start */
+
+.contact-hero-content h1 {
+    font-size: 50px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+.contact-hero-content p {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+}
+
+.contact-hero-img img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin-right: auto;
+}
+
+.contact-form-left img {
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.contact-form-left h2 {
+    margin-left: 50px;
+}
+
+
+.contact-form-right input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    background-color: #fdfafa;
+    margin-bottom: 30px;
+}
+
+.contact-form-right input::placeholder {
+    color: var(--secondary-text-color);
+}
+
+.contact-form-right input:focus {
+    outline: none;
+    box-shadow: 0px 5px 20px 2px #c7c7c7;
+}
+
+.contact-form-right input:focus::placeholder {
+    color: var(--primary-color);
+}
+
+.contact-form-right textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    background-color: #fdfafa;
+}
+
+.contact-form-right textarea::placeholder {
+    color: var(--secondary-text-color);
+}
+
+.contact-form-right textarea:focus {
+    outline: none;
+    box-shadow: 0px 5px 20px 2px #c7c7c7;
+}
+
+.contact-form-right textarea:focus::placeholder {
+    color: var(--primary-color);
+}
+
+.contact-form-btn button {
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 5px 20px 2px var(--primary-color);
+    transition: all ease-in-out 0.5s;
+}
+
+.contact-form-btn button:hover {
+    box-shadow: none;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    margin: 10px 0px 50px 0px;
+}
+
+.contact-card-1 {
+    background-color: #28a745;
+    border: none;
+}
+
+.contact-card-2 {
+    background-color: #6c757d;
+    border: none;
+}
+
+.contact-card-3 {
+    background-color: #17a2b8;
+    border: none;
+}
+
+/* contact page css end */
+
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : Thank you !                       │
  * └─────────────────────────────────────────────┘
  */

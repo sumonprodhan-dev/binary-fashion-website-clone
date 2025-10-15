@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="./assets/vendor/swiperJS/swiper-bundle.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="./assets/vendor/wowJS/animate.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- magnific popup css -->
     <link rel="stylesheet" href="./assets/vendor/magnific-popup/magnific-popup.css">
     <!-- Google Web Fonts -->
@@ -31,6 +32,12 @@
 </head>
 
 <body>
+    <!-- Loader Section Start -->
+    <div id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- Loader Section End -->
+
     <!-- header area start -->
     <div class="header" id="navbar"></div>
     <!-- header area end -->
@@ -42,19 +49,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-7">
-                        <div class="hero-content wow fadeInUp">
+                        <div class="hero-content " data-aos="fade-up" data-aos-duration="2000">
                             <h1>We Develop Software Solutions <br><span>That Your Business Needs</span></h1>
                             <p>Binary Fusion is a software company that uses the newest tech and skilled experts to
                                 create powerful solutions that help businesses grow bigger and better.</p>
                             <div class="hero-content-btn">
-                                <a href="#" class="hero-btn-1 wow fadeInUp" data-wow-delay="0.5s">Our Project</a>
-                                <a href="#" class="hero-btn-2 wow fadeInUp" data-wow-delay="0.5s">About Us</a>
+                                <div data-aos="fade-up" data-aos-duration="3000"><a href="#" class="hero-btn-1">Our
+                                        Project</a></div>
+                                <div data-aos="fade-up" data-aos-duration="3000"><a href="#" class="hero-btn-2">About
+                                        Us</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-10 col-lg-5">
                         <div class="hero-img text-right">
-                            <img class="img-fluid wow pixZoomIn"
+                            <img class="img-fluid" data-aos="zoom-in" data-aos-duration="3000"
                                 src="./assets/images/home-page_img/hero-img/banner-illustration.png" alt="hero-img">
                         </div>
                     </div>
@@ -84,8 +93,8 @@
             <div class="container">
                 <div class="row section-heading">
                     <div class="col-md-5">
-                        <div class="about-img position-relative">
-                            <img class="img-fluid rounded-3 wow fadeInUp"
+                        <div class="about-img position-relative wow fadeInUp">
+                            <img class="img-fluid rounded-3"
                                 src="./assets/images/home-page_img/about-img/world-wide.png" alt="about-img">
 
                             <div class="dot-img position-absolute">
@@ -332,7 +341,14 @@
     <div id="scroll-top">
         <a href="index.html" class="scroll-icon"><i class="fas fa-arrow-up"></i></a>
     </div>
-
+    
+    <!-- /*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * └─────────────────────────────────────────────┘
+ */ -->
     <!-- bootstrap js -->
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- fontawesome js -->
@@ -341,6 +357,8 @@
     <script src="./assets/vendor/swiperJS/swiper-bundle.min.js"></script>
     <!-- animate js -->
     <script src="./assets/vendor/wowJS/wow.min.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- magnific popup js -->
     <script src="./assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- jquery js -->
