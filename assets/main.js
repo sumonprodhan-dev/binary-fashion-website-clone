@@ -3,6 +3,21 @@
  * │  Author : Sumon Prodhan                     │
  * │  Role   : Full Stack Developer              │
  * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : Page Loader code                  │
+ * └─────────────────────────────────────────────┘
+ */
+window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      loader.classList.add("hidden");
+    });
+// =======================================================================
+
+
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
  * │  Page   : Header Page code                  │
  * └─────────────────────────────────────────────┘
  */
