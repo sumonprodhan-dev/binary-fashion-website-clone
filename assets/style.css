@@ -20,6 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 :root {
     --primary-color: #27a102;
     --primary-text-color: #1a133b;
@@ -28,6 +29,11 @@ html {
 }
 
 /* common css */
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
+
 section,
 .section-padding {
     padding: 60px 0px;
@@ -47,6 +53,10 @@ section,
     color: var(--secondary-text-color);
     font-size: 16px;
     margin: 15px 0px 60px 0px;
+}
+
+.lh {
+    line-height: 28px;
 }
 
 
@@ -131,8 +141,9 @@ section,
  */
 
 /* hero area start */
+
 .hero-content h1 {
-    font-size: 50px;
+    font-size: 45px;
     color: var(--primary-text-color);
     font-weight: 300;
     margin-bottom: 15px;
@@ -143,7 +154,7 @@ section,
 .hero-content h1 span {
     color: var(--primary-text-color);
     font-weight: 600;
-    font-size: 55px;
+    font-size: 50px;
     letter-spacing: 0px;
 }
 
@@ -191,15 +202,15 @@ section,
     color: #fff;
 }
 
-.hero-img img {
-    width: 90%;
-    height: auto;
+.hero-section {
+    position: relative;
+    overflow-x: clip;
 }
 
 .hero-background-element .ball {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 14%;
+    left: 12%;
     z-index: -1;
 }
 
@@ -212,9 +223,9 @@ section,
 
 .hero-background-element .dot-shape {
     position: absolute;
-    top: -45px;
+    top: -60px;
     right: 40px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .hero-background-element .circle-bg {
@@ -224,8 +235,9 @@ section,
     border-radius: 50%;
     background-color: #f0f5e6;
     top: -380px;
-    right: 0px;
+    right: -30px;
     z-index: -1;
+    pointer-events: none;
 }
 
 .rotate-icon {
@@ -257,10 +269,12 @@ section,
     transform: translateX(-50%);
     z-index: -1;
 }
-.dot-img img{
+
+.dot-img img {
     width: 200px !important;
     height: auto !important;
 }
+
 /* about area end */
 
 
@@ -307,7 +321,6 @@ section,
 }
 
 /* project area end */
-
 
 /* technology area start */
 .technologies-section {
@@ -469,13 +482,9 @@ section,
 
 /* services area start */
 .services-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px 30px;
+    width: auto;
+    height: 260px;
+    padding: 20px;
     border-radius: 10px;
     border: 1px solid #c5c5c5;
     box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.1);
@@ -520,6 +529,7 @@ section,
 }
 
 /* partner area end */
+/* home page css end */
 
 /*
  * ┌─────────────────────────────────────────────┐
@@ -533,6 +543,10 @@ section,
 /* footer area start */
 footer {
     background-color: #171616;
+    position: relative;
+    overflow: visible;
+    z-index: 10;
+    min-height: 400px;
 }
 
 .footer-social-icon ul {
@@ -730,9 +744,74 @@ footer {
  * │  Page   : About Page css code               │
  * └─────────────────────────────────────────────┘
  */
+/* service page css start */
+/* hero section css start */
+.services-sec {
+    background-color: #f6f7f9;
+}
 
+/* hero section css end */
+
+/* expertise section css start */
+.expertise-sec {
+    background-color: #f0f7ef;
+}
+
+.expertise-item {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease;
+}
+
+.expertise-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #5eff8e;
+    transform: translate(100%, -100%) rotate(45deg);
+    transition: all 1s ease;
+    z-index: 0;
+}
+
+.expertise-item:hover::before {
+    width: 700%;
+    height: 700%;
+    transform: translate(0, 0) rotate(45deg);
+}
+
+.expertise-item:hover {
+    border-color: #5eff8e;
+}
+
+.expertise-item * {
+    position: relative;
+    z-index: 1;
+}
+
+.expertise-item h5 {
+    font-weight: 400;
+}
+
+/* service page css end */
+
+
+
+/*
+ * ┌─────────────────────────────────────────────┐
+ * │  Author : Sumon Prodhan                     │
+ * │  Role   : Full Stack Developer              │
+ * │  Email  : sumonpro.dev@gmail.com            │
+ * │  Page   : About Page css code               │
+ * └─────────────────────────────────────────────┘
+ */
 
 /* about page css start*/
+/* hero section css start */
 .about-content {
     padding: 50px 100px 0px 0px;
 }
@@ -743,6 +822,9 @@ footer {
     border-radius: 15px;
 }
 
+/* hero section css end */
+
+/* making area css start */
 .about-making-img {
     width: 400px;
     height: auto;
@@ -753,6 +835,9 @@ footer {
     padding: 0px 100px 0px 0px;
 }
 
+/* making area css end */
+
+/* growth area css start */
 .growth-area-content {
     padding-top: 50px;
 }
@@ -766,10 +851,16 @@ footer {
     margin-right: auto
 }
 
+/* growth area css end */
+
+/* leadership area css start */
 .leadership-area-content {
     padding: 0px 100px 0px 0px;
 }
 
+/* leadership area css end */
+
+/* dream area css start */
 .dream-card {
     padding: 0px 20px 0px 20px;
     transition: all ease-in-out 0.4s;
@@ -789,6 +880,9 @@ footer {
     margin-top: 40px;
 }
 
+/* dream area css end */
+
+/* achievements area css start */
 .achievements-area h1 {
     font-size: 40px;
     color: var(--primary-text-color);
@@ -829,7 +923,9 @@ footer {
     color: #f62ee1 !important;
 }
 
+/* achievements area css end */
 
+/* introducing area css start */
 .introducing-card {
     position: relative;
     width: 380px;
@@ -890,6 +986,9 @@ footer {
     font-size: 30px;
 }
 
+/* introducing area css end */
+
+/* hire us area css start */
 .hire-us-area {
     background-image: url(./images/about-page_img/hire-sec_img/cta-bg.jpg);
     background-size: cover;
@@ -913,8 +1012,6 @@ footer {
  * │  Page   : Contact Page css code             │
  * └─────────────────────────────────────────────┘
  */
-
-
 /* contact page css start */
 
 .contact-hero-content h1 {

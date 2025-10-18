@@ -30,6 +30,7 @@ fetch('footer.html')
   .then(data => {
     const footer = document.querySelector('.footer');
     if (footer) footer.innerHTML = data;
+    AOS.refreshHard();
   });
 // =======================================================================
 
@@ -133,32 +134,14 @@ if (counters.length > 0) {
  * │  Author : Sumon Prodhan                     │
  * │  Role   : Full Stack Developer              │
  * │  Email  : sumonpro.dev@gmail.com            │
- * │  Page   : wow js animation code             │
- * └─────────────────────────────────────────────┘
- */
-// wow js
-if (typeof WOW !== "undefined") {
-  new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    live: true
-  }).init();
-}
-// =======================================================================
-
-
-/*
- * ┌─────────────────────────────────────────────┐
- * │  Author : Sumon Prodhan                     │
- * │  Role   : Full Stack Developer              │
- * │  Email  : sumonpro.dev@gmail.com            │
  * │  Page   : aos js animation code             │
  * └─────────────────────────────────────────────┘
  */
 // aos js
 if (typeof AOS !== "undefined") {
-  AOS.init();
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 }
 // =======================================================================
