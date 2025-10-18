@@ -31,27 +31,6 @@ It replicates the layout, sections, and design of an existing corporate website,
 
 ---
 
-## 📁 Project Structure
-
-/company-website-clone
-│
-├── /assets
-│   ├── /css       → Custom styles and Bootstrap overrides
-│   ├── /images    → All images, logos, backgrounds
-│   ├── /js        → Scripts and AOS initialization
-│   └── /vendor    → Other scripts, fonts, libraries
-│
-├── header.html      → Optional header include
-├── index.html       → Main page
-├── portfolio.html   → Portfolio page
-├── services.html    → Services page
-├── about.html       → About page
-├── contact.html     → Contact page
-├── footer.html      → Optional footer include
-└── README.md        → Project documentation
-
----
-
 ## Installation & Usage
 
 1. Clone the repository: `git clone https://github.com/sumonprodhan-dev/binary-fashion-website-clone.git`
